@@ -5,15 +5,16 @@ function StopWatch() {
 
   const handleLap = () =>{
     setLap(oldArray => [...oldArray, time]);
-
-
   }
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimeOn] = React.useState(false);
   const [lap, setLap] = React.useState([]);
 
   // setTheArray(oldArray => [...oldArray, newElement]);
-
+  const handleReset = () =>{
+    setTime(0);
+    setLap(oldArray => []);
+  }
   React.useEffect(
     () =>{
       let interval = null ;
@@ -38,9 +39,7 @@ function StopWatch() {
         </div>
         <hr></hr>
         <div id = "buttons">
-        <button onClick={()=>{setTimeOn(true);}}> Start </button> 
-
-
+        <button onClick={()=>{setTimeOn(true);}}> Start </button>
         {
                 timerOn && (
                   <button onClick={() => setTimeOn(false)}> Stop </button> 
@@ -51,15 +50,8 @@ function StopWatch() {
             <button onClick={()=>setTimeOn(true)}> Resume </button> 
           )
         }
-
-
-
-{ " "}<button onClick={()=>setTime(0)}> Reset </button>   { " "}{ " "}
-        <button onClick={handleLap}> Lap </button>   
-
-               
-             
-
+          { " "}<button onClick={handleReset}> Reset </button>   { " "}{ " "}
+          <button onClick={handleLap}> Lap </button>
           </div>
           <hr></hr>
         <div>
