@@ -1,5 +1,5 @@
 .Timers{
-    width:180px;
+    /* width:180px; */
     margin:0 auto;
     text-align: center;
     
@@ -11,8 +11,8 @@ hr{
 
 #wrapper{
     
-    height: 40%;
-  width: 50%;
+    /* height: 40%;
+  width: 50%; */
   background-color: powderblue;
     border-width: 5px;
     border-style: solid;

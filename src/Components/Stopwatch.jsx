@@ -1,8 +1,18 @@
 import React from 'react';
+import { LapList } from './LapList/LapList';
 import './Stopwatch.css';
 function StopWatch() {
+
+  const handleLap = () =>{
+    setLap(oldArray => [...oldArray, time]);
+
+
+  }
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimeOn] = React.useState(false);
+  const [lap, setLap] = React.useState([]);
+
+  // setTheArray(oldArray => [...oldArray, newElement]);
 
   React.useEffect(
     () =>{
@@ -28,36 +38,33 @@ function StopWatch() {
         </div>
         <hr></hr>
         <div id = "buttons">
-              {
-                !timerOn && time === 0 && (
-                  <button onClick={()=>setTimeOn(true)}>Start</button>
+        <button onClick={()=>{setTimeOn(true);}}> Start </button> 
 
-                )
-              }
 
-              {
+        {
                 timerOn && (
-                  <button onClick={() => setTimeOn(false)}>Stop</button>
+                  <button onClick={() => setTimeOn(false)}> Stop </button> 
                 )
               }
-              {
-                !timerOn && time !== 0 && (
+        {
+          !timerOn && (
+            <button onClick={()=>setTimeOn(true)}> Resume </button> 
+          )
+        }
 
-                  <button onClick={()=>setTimeOn(true)}>Resume</button>
-                )
-              }
-              {
-                !timerOn && time > 0 && (
-                  <button onClick={()=>setTime(0)}>Reset</button>
 
-                )
-              }
-              
+
+{ " "}<button onClick={()=>setTime(0)}> Reset </button>   { " "}{ " "}
+        <button onClick={handleLap}> Lap </button>   
+
+               
              
 
           </div>
           <hr></hr>
-    
+        <div>
+          <LapList lap={lap}></LapList>  
+        </div>
         </div>
 
         </div>
