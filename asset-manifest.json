@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/stopwach/static/css/main.340e04ad.chunk.css",
+    "main.js": "/stopwach/static/js/main.43c76490.chunk.js",
+    "main.js.map": "/stopwach/static/js/main.43c76490.chunk.js.map",
+    "runtime-main.js": "/stopwach/static/js/runtime-main.656c434e.js",
+    "runtime-main.js.map": "/stopwach/static/js/runtime-main.656c434e.js.map",
+    "static/js/2.d5e4d183.chunk.js": "/stopwach/static/js/2.d5e4d183.chunk.js",
+    "static/js/2.d5e4d183.chunk.js.map": "/stopwach/static/js/2.d5e4d183.chunk.js.map",
+    "static/js/3.4354f1da.chunk.js": "/stopwach/static/js/3.4354f1da.chunk.js",
+    "static/js/3.4354f1da.chunk.js.map": "/stopwach/static/js/3.4354f1da.chunk.js.map",
+    "index.html": "/stopwach/index.html",
+    "static/css/main.340e04ad.chunk.css.map": "/stopwach/static/css/main.340e04ad.chunk.css.map",
+    "static/js/2.d5e4d183.chunk.js.LICENSE.txt": "/stopwach/static/js/2.d5e4d183.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.656c434e.js",
+    "static/js/2.d5e4d183.chunk.js",
+    "static/css/main.340e04ad.chunk.css",
+    "static/js/main.43c76490.chunk.js"
+  ]
+}
