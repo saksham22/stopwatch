@@ -1,0 +1,56 @@
+:root {
+  --buttonBackgroundColor: rgb(217, 60, 35);
+  --buttonOnHoverColor: rgb(173, 47, 28);
+  --buttonActiveColor: rgb(130, 35, 21);
+  --buttonColor: #fff;
+  --wrapperColor: powderblue;
+}
+
+.timer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+}
+
+.wrapper {
+  background-color: var(--wrapperColor);
+  border-width: 5px;
+  border-style: solid;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.display {
+  margin-bottom: 20px;
+}
+
+.display span {
+  font-size: 36px;
+}
+
+
+button {
+  font-size: 16px;
+  background-color: var(--buttonBackgroundColor);
+  color: var(--buttonColor);
+  border-radius: 8px;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right:8px;
+}
+
+button:hover {
+  background-color: var(--buttonOnHoverColor);
+}
+
+button:active {
+  background-color: var(--buttonActiveColor);
+}
+
+button:focus {
+  outline: 0;
+}
